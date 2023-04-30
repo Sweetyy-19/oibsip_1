@@ -1,0 +1,194 @@
+*{
+	font-family:arial;
+	box-sizing: border-box;
+
+ }
+header{
+position:fixed;
+top:0;left:0;right:0;
+background:black;
+padding:1;item 7%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+z-index:1000;
+}
+header .navbar a{
+font-size:20px;
+border-radius:50px;
+padding:.5rem .5rem;
+color:white;
+text-decoration:none;
+}
+header .navbar a.active,
+header .navbar a:hover{
+	color:orange;
+}
+.banner img{
+	width:1520px;
+	position:fit;
+	height:750;
+}
+.sub-heading{
+	text-align:center;
+	color:red;
+	font-size:40px;
+	padding-top:.30px;
+}
+.main-heading{
+	text-align:center;
+	color:black;
+	font-size:40px;
+	padding-top:.10px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+}
+.dishes .box-container{
+	display:grid;
+	grid-template-columns:repeat(auto-fit, minmax(20rem,1fr));
+	gap: 1.5rem;
+	padding-bottom: 40px;
+}
+.dishes .box-container .box{
+	padding: 2rem;
+	background:white;
+	border-radius: .5rem;
+	border: .1rem solid rgb(0,0,0, .2);
+	box-shadow:black;
+	position:relative;
+	overflow:hidden;
+	text-align:center;
+}
+.dishes .box-container .box img{
+	height: 10rem;
+}
+section{
+	padding: 1rem 8%;
+}
+#about-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-left img{
+    width: 320px;
+    height: auto;
+    transform: translateY(50px);
+}
+.about-right {
+    width: 54%;
+}
+
+.about-right ul li {
+    display: flex;
+    align-items: center;
+}
+
+.about-right h1 {
+    color: orange;
+    font-size: 37px;
+    margin-bottom: 5px;
+}
+
+.about-right p {
+    color: white;
+    line-height: 26px;
+    font-size: 15px;
+}
+@font-face {
+    font-family: pop;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: dance;
+    src: url(./fonts/DancingScript-Regular.ttf);
+}
+.contact-section{
+    width: 100%;
+    height: auto;
+    padding: 1rem 8%;
+    color: #fff;
+    font-family: pop;
+    position: relative;
+    overflow: hidden;
+}
+.contact-section > h2{
+    font-size: 29px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.contact-section > h2::after{
+    content: " ";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #f39c12;
+    border-radius: 10px;
+    left: 0;
+    bottom: -4px;
+}
+.contact-container{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea{
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin: 15px 0;
+	border: 1px solid black;
+	
+}
+::placeholder{
+    font-size: 18px;
+    color:black;
+}
+form .input-name{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins', sans-serif;
+	box-sizing: border-box;
+}
+.footer{
+	margin-top: 50px;
+	width: auto;
+	padding: 100px 15%;
+	background: #222;
+	color: #efefef;
+	display: flex;
+}
+.footer div{
+	text-align: center;
+}
+.col-2{
+	flex-grow: 2;
+}
+.footer div h2{
+	font-weight: 350;
+	margin-bottom: 30px;
+	letter-spacing:1px;
+	padding-bottom:10px;
+}
+.col-1 a{
+	display: block;
+	text-decoration: none;
+	color: #efefef;
+	margin-bottom: 10px;
+	font-size: large;
+}
+.col-3 p{
+	padding-bottom: 12px;
+	font-size:large;
+}
